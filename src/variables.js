@@ -1,4 +1,4 @@
 // storing some variables
 
-export const BE_URL = 'http://localhost/PHP/scandiweb-test'
-export const FE_URL = 'http://localhost:3000'
+export const BE_URL = 'https://asteriated-period.000webhostapp.com'
+export const FE_URL = 'https://product-listing-test-fe-alex-nascimentoo.vercel.app'
