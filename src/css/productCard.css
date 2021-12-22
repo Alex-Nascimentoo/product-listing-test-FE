@@ -1,0 +1,14 @@
+.product-card {
+  /* border: 2px solid salmon; */
+  border-radius: 11px;
+
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+
+  padding: 2em;
+  /* width: 100%; */
+}
+
+.product-info {
+  text-align: center;
+}

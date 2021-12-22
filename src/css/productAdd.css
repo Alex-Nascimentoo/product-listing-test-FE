@@ -1,0 +1,32 @@
+input {
+  border: none;
+  border-radius: 3px;
+
+  padding: .25em .5em;
+
+  /* background-color: rgb(197, 197, 197); */
+}
+
+input[type="submit"] {
+  display: none;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+#product_form {
+  width: 50%;
+  min-width: 25em;
+  margin: 5em auto 0;
+}
+
+.single-input {
+  display: flex;
+  justify-content: space-between;
+  margin: .7em 0;
+}
+
+.special-attribute {
+  text-align: center;
+}

@@ -1,0 +1,5 @@
+.product-listing {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2em;
+  row-gap: 2em;
+}
