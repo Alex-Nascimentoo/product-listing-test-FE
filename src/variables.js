@@ -1,4 +1,3 @@
-// storing some variables
+// storing url variable
 
-export const BE_URL = 'https://asteriated-period.000webhostapp.com'
-export const FE_URL = 'https://product-listing-test-fe-alex-nascimentoo.vercel.app'
+export const BE_URL = 'https://scandiweb-listing-test.herokuapp.com'

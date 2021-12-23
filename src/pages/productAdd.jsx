@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { BE_URL, FE_URL } from '../variables'
+import { BE_URL } from '../variables'
 import Structure from '../components/mainStructure'
 import '../css/productAdd.css'
 
@@ -77,7 +77,7 @@ function ProductList() {
       pageTitle="Product Add"
       button1="Save"
       button2="Cancel"
-      link2={FE_URL}
+      link2='/'
       onClick1={ handleSubmit }
     >
 
