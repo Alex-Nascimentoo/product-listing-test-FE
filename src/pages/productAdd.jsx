@@ -14,12 +14,21 @@ function SpecialInfo(props) {
 
       {
         arr.map(input => {
-          return (
-            <div key={input.name} className='single-input'>
-              <label>{ input.label }</label>
-              <input type="number" name={ input.name } id={ input.id } required />
-            </div>
-          )
+          if(input.id === 'weight') {
+            return (
+              <div key={input.name} className='single-input'>
+                <label>{ input.label }</label>
+                <input type="number" step="0.01" name={ input.name } id={ input.id } required />
+              </div>
+            )
+            }else {
+              return (
+                <div key={input.name} className='single-input'>
+                  <label>{ input.label }</label>
+                  <input type="number" name={ input.name } id={ input.id } required />
+                </div>
+              )
+            }
         })
       }
 
@@ -94,13 +103,13 @@ function ProductList() {
 
         <div className="single-input">
           <label>Price ($)</label>
-          <input type="number" name="price" id="price" required autoComplete='off' />
+          <input type="number" min="0" step="0.01" name="price" id="price" required autoComplete='off' />
         </div>
 
         <div className="single-input">
           <label>Type Switcher</label>
-          <select name="productType" id="productType" required onChange={changeType} >
-            <option id='disabled' value="" disabled selected>Type Switcher</option>
+          <select name="productType" id="productType" required onChange={changeType} defaultValue="" >
+            <option id='disabled' value="" disabled>Type Switcher</option>
             <option value="dvd">DVD</option>
             <option value="book">Book</option>
             <option value="furniture">Furniture</option>
@@ -108,7 +117,7 @@ function ProductList() {
         </div>
 
         <SpecialInfo id={ attributeId } arr={ specialAttribute } description={ description } />
-        <input type="submit" ref={ action } />
+        <input id="btnSubmit" type="submit" ref={ action } />
       </form>
 
     </Structure>
