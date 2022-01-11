@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<ProductList />} />
           <Route path="/add-product" exact element={<ProductAdd />} />
-          <Route path="/add-product/repeatedSku" exact element={<ProductAddFail />} />
+          <Route path="/add-product/fail" exact element={<ProductAddFail />} />
         </Routes>
       </BrowserRouter>
     </div>
