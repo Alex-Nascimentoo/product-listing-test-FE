@@ -14,3 +14,7 @@
 .product-info {
   text-align: center;
 }
+
+.delete-checkbox {
+  float: left;
+}
