@@ -1,0 +1,30 @@
+main {
+  height: 100vh;
+
+  font-size: large;
+  text-align: center;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  margin: 1rem;
+  display: inline-block;
+}
+
+.buttons {
+  margin: 2rem;
+}
+
+.route-button {
+  padding: .7rem 1.3rem;
+  border-radius: 5px;
+
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+
+  background-color: rgb(150, 150, 150);
+}
